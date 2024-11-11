@@ -1,0 +1,63 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: {
+    typeName: 'Vergi Bakım Tablosu', 
+    typeNamePlural: 'Vergi Bakım Tablosu'
+  }
+}
+annotate view ZC_FI003_T_TAXCODE with
+{
+  @UI.facet: [ {
+    id: 'idIdentification', 
+    type: #IDENTIFICATION_REFERENCE, 
+    label: 'Vergi Bakım Tablosu', 
+    position: 10 
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 10 
+  } ]
+  TaxCode;
+  
+  @UI.lineItem: [ {
+    position: 20 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 20 
+  } ]
+  TaxType;
+  
+  @UI.lineItem: [ {
+    position: 30 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 30 
+  } ]
+  MoveType;
+  
+  @UI.lineItem: [ {
+    position: 40 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 40 
+  } ]
+  Percent;
+  
+  @UI.lineItem: [ {
+    position: 50 , 
+    importance: #MEDIUM
+  } ]
+  @UI.identification: [ {
+    position: 50 
+  } ]
+  DebitCredit;
+  
+  @UI.hidden: true
+  LocalLastChangedAt;
+}

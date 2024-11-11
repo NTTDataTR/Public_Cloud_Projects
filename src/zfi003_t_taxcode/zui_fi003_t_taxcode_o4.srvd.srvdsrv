@@ -1,0 +1,4 @@
+@EndUserText.label: 'Service definition for ZC_FI003_T_TAXCODE'
+define service ZUI_FI003_T_TAXCODE_O4 {
+  expose ZC_FI003_T_TAXCODE;
+}
